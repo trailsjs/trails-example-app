@@ -8,3 +8,5 @@ exports.server = require('./server')
 exports.session = require('./session')
 exports.views = require('./views')
 exports.webpack = require('./webpack')
+
+exports.env = require('./env')
