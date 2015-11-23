@@ -1,0 +1,1 @@
+exports.DefaultController = require('./DefaultController')

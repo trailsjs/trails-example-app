@@ -1,0 +1,41 @@
+{
+  "name": "trails-example-app",
+  "version": "0.0.0",
+  "description": "A new Trails application",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trailsjs/testapp.git"
+  },
+  "keywords": [
+    "trails",
+    "testapp"
+  ],
+  "author": "Travis Webb <me@traviswebb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trailsjs/testapp/issues"
+  },
+  "homepage": "https://github.com/trailsjs/testapp#readme",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "os": [
+    "darwin",
+    "win32",
+    "linux"
+  ]
+}
