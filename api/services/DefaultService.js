@@ -3,7 +3,7 @@
  *
  * @description Default Service included with a new Trails app
  */
-export default {
+module.exports = {
 
   /**
    * Return some info about this application
