@@ -8,7 +8,7 @@ module.exports = {
   /**
    * Return some info about this application
    */
-  getApplicationInfo () {
+  getApplicationInfo (trails) {
     return {
       trails: trails.version,
       trailpacks: trails.trailpacks,

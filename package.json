@@ -13,7 +13,7 @@
     "supertest": "^1.1.0"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test/unit && mocha test/integration",
     "start": "node server.js"
   },
   "repository": {

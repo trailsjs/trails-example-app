@@ -11,7 +11,7 @@ describe('DefaultService', () => {
 
   describe('#getApplicationInfo', () => {
     it('should return application info', () => {
-      const info = DefaultService.getApplicationInfo()
+      const info = DefaultService.getApplicationInfo({ })
 
       assert(info)
     })
