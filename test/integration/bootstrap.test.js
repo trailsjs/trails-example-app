@@ -1,19 +1,21 @@
-const Trails = require('trails-core')
-const App = require('../')
+const TrailsCore = require('trails-core')
+const App = require('../../')
+const core = new TrailsCore()
 
-before(() => {
-  return Trails.configure(App.config, App.pkg)
-    .initialize(App.api)
+before(done => {
+  return core
+    .configure(App.config, App.pkg)
+    .then(() => core.initialize(App.api))
     .then(app => {
-      global.trails = app
       return app.start()
     })
     .catch(err => {
-      global.trails.log.error(err)
-      return global.trails.stop()
+      done(err)
+      global.app.log.error(err)
+      return global.app.stop()
     })
 })
 
 after(() => {
-  return global.trails.stop()
+  return global.app.stop()
 })

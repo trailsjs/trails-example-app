@@ -1,13 +1,5 @@
-const Trails = require('trails-core')
+const TrailsApp = require('trails-app')
 const App = require('./')
+const app = new TrailsApp(App)
 
-Trails.configure(App.config, App.pkg)
-  .initialize(App.api)
-  .then(app => {
-    global.trails = app
-    return app.start()
-  })
-  .catch(err => {
-    app.log.error(err)
-    return app.stop()
-  })
+app.start().catch(app.stop)

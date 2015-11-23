@@ -1,4 +1,3 @@
-exports.app = require('./app')
 exports.controllers = require('./controllers')
 exports.db = require('./db')
 exports.footprints = require('./footprints')
@@ -6,6 +5,7 @@ exports.log = require('./log')
 exports.routes = require('./routes')
 exports.server = require('./server')
 exports.session = require('./session')
+exports.trailpack = require('./trailpack')
 exports.views = require('./views')
 exports.webpack = require('./webpack')
 
