@@ -6,20 +6,23 @@
  *
  * @see http://trailsjs.io/doc/config/routes.js
  */
-module.exports = {
+module.exports = [
 
   /**
    * Render the HelloWorld view
    */
-  'GET /': {
-    view: 'HelloWorld'
+  {
+    method: 'GET',
+    path: '/',
+    handler: 'ViewController.helloWorld'
   },
 
   /**
    * Execute the DefaultController.info handler
    */
-  'GET /trailsinfo': {
-    controller: 'DefaultController',
-    handler: 'info'
+  {
+    method: 'GET',
+    path: '/info',
+    handler: 'DefaultController.info'
   }
-}
+]
