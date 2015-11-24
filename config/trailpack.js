@@ -16,7 +16,7 @@ module.exports = {
    * Order does *not* matter
    */
   packs: [
-
+    require('trailpack-repl')
   ],
 
   paths: {
