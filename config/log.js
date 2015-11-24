@@ -9,19 +9,17 @@ const winston = require('winston')
 module.exports = {
 
   /**
-   * Specify the logger to use
-   * @see https://github.com/trailsjs/trails-logging for supported loggers
+   * Specify the logger to use.
+   * @see https://github.com/winstonjs/winston#instantiating-your-own-logger
+   *
+   * Exposed on app.log
    */
-  logger: 'winston',
-
-  /**
-   * Set the log level/severity, where the logging output should go, etc.
-   */
-  options: {
+  logger: new winston.Logger({
     level: 'debug',
+    exitOnError: false,
     transports: [
       new (winston.transports.Console)()
     ]
-  }
+  })
 
 }
