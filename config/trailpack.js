@@ -7,15 +7,10 @@
 module.exports = {
 
   /**
-   * The core pack for this application. Different core packs can be used to
-   * load different kinds of applications, e.g. 'trailpack-core-sails'
-   */
-  core: require('trailpack-core'),
-
-  /**
-   * Order does *not* matter
+   * Order does *not* matter. Each module is loaded according to its own requirements.
    */
   packs: [
+    require('trailpack-core'),
     require('trailpack-repl')
   ],
 

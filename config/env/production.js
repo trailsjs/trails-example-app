@@ -1,7 +1,9 @@
+const winston = require('winston')
+
 module.exports = {
 
   trailpacks: {
-    disableTrailpacks: [
+    disabled: [
       'trailpack-repl'
     ]
   },
@@ -11,14 +13,20 @@ module.exports = {
       level: 'info',
       exitOnError: false,
       transports: [
-        new winston.transports.Console(),
+        new winston.transports.Console({
+          timestamp: true
+        }),
         new winston.transports.File({
+          name: 'info-file',
           level: 'info',
-          filename: 'trails-info.log'
-        })
+          filename: 'trails-info.log',
+          timestamp: true
+        }),
         new winston.transports.File({
+          name: 'error-file',
           level: 'error',
-          filename: 'trails-error.log'
+          filename: 'trails-error.log',
+          timestamp: true
         })
       ]
     })

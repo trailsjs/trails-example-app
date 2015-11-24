@@ -18,7 +18,10 @@ module.exports = {
     level: 'debug',
     exitOnError: false,
     transports: [
-      new (winston.transports.Console)()
+      new (winston.transports.Console)({
+        prettyPrint: true,
+        colorize: true
+      })
     ]
   })
 
