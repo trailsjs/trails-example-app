@@ -1,8 +1,8 @@
 module.exports = {
 
-  trailpacks: {
+  trailpack: {
     disabled: [
-      'trailpack-repl'
+      'repl'
     ]
   },
 

@@ -2,9 +2,9 @@ const winston = require('winston')
 
 module.exports = {
 
-  trailpacks: {
+  trailpack: {
     disabled: [
-      'trailpack-repl'
+      'repl'
     ]
   },
 
