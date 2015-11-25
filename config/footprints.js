@@ -7,24 +7,38 @@
  * @see http://trailsjs.io/doc/config/footprints.js
  */
 module.exports = {
+
   /**
    * Generate routes for controller handlers.
    */
-  handlers: true,
+  controllers: {
+    handlers: true
+  },
 
   /**
    * Generate conventional Create, Read, Update, and Delete (CRUD) routes for
    * each Model.
    */
-  rest: true,
+  models: {
+    create: true,
+    find: true,
+    update: true,
+    destroy: true,
+
+    /**
+     * Automatically populate all model associations
+     */
+    populate: true,
+
+
+    /**
+     * Subscribe to changes on requested models via WebSocket
+     */
+    watch: false
+  },
 
   /**
    * Prefix your footprint routes
    */
-  prefix: '/api',
-
-  /**
-   * Automatically populate all model associations
-   */
-  populate: true
+  prefix: '/api'
 }

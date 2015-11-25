@@ -18,11 +18,10 @@ module.exports = [
   },
 
   /**
-   * Execute the DefaultController.info handler
+   * Constrain the DefaultController.info handler to accept only GET requests.
    */
   {
-    method: 'GET',
-    path: '/info',
+    method: [ 'GET' ],
     handler: 'DefaultController.info'
   }
 ]
