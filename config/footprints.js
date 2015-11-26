@@ -19,31 +19,41 @@ module.exports = {
    * each Model.
    */
   models: {
-    defaultLImit: 100,
+    options: {
 
-    create: true,
-    find: true,
-    update: true,
-    destroy: true,
+      /**
+       * The max number of objects to return by default. Can be overridden in
+       * the request using the ?limit argument.
+       */
+      defaultLimit: 100,
 
-    /**
-     * Whether to populate all model associations by default (for "find"
-     * and "findOne")
-     */
-    populate: true,
+      /**
+       * Subscribe to changes on requested models via WebSocket
+       * (support provided by trailpack-websocket)
+       */
+      watch: false
+    },
 
-    /**
-     * Specify which "association" endpoints to bind.
-     */
-    createAssociation: true,
-    findAssociation: true,
-    updateAssociation: true,
-    destroyAssociation: true
+    routes: {
+      create: true,
+      find: true,
+      update: true,
+      destroy: true,
 
-    /**
-     * Subscribe to changes on requested models via WebSocket
-     */
-    watch: false
+      /**
+       * Whether to populate all model associations by default (for "find"
+       * and "findOne")
+       */
+      populate: true,
+
+      /**
+       * Specify which "association" endpoints to bind.
+       */
+      createAssociation: true,
+      findAssociation: true,
+      updateAssociation: true,
+      destroyAssociation: true
+    }
   },
 
   /**
