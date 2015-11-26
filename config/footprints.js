@@ -11,9 +11,7 @@ module.exports = {
   /**
    * Generate routes for controller handlers.
    */
-  controllers: {
-    handlers: true
-  },
+  controllers: true,
 
   /**
    * Generate conventional Create, Read, Update, and Delete (CRUD) routes for
@@ -40,5 +38,5 @@ module.exports = {
   /**
    * Prefix your footprint routes
    */
-  prefix: '/api'
+  prefix: '/api/v1'
 }
