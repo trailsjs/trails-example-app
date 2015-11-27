@@ -31,20 +31,20 @@ module.exports = {
        * Subscribe to changes on requested models via WebSocket
        * (support provided by trailpack-websocket)
        */
-      watch: false
-    },
-
-    routes: {
-      create: true,
-      find: true,
-      update: true,
-      destroy: true,
+      watch: false,
 
       /**
        * Whether to populate all model associations by default (for "find"
        * and "findOne")
        */
-      populate: true,
+      populate: true
+    },
+
+    actions: {
+      create: true,
+      find: true,
+      update: true,
+      destroy: true,
 
       /**
        * Specify which "association" endpoints to bind.
