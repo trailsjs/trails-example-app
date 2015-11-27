@@ -11,7 +11,9 @@ module.exports = {
   /**
    * Specify the web server to use. e.g. 'hapi', 'express4', 'koa2'
    */
-  server: 'hapi',
+  engine: 'hapi',
+
+  host: 'localhost',
 
   /*
    * The port for the web server to listen on

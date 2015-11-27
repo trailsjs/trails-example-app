@@ -13,6 +13,8 @@ module.exports = {
    */
   orm: 'waterline',
 
+  defaultStore: 'localStorage',
+
   /**
    * Define the database stores. A store is typically a single database.
    *
@@ -21,8 +23,6 @@ module.exports = {
    * Set production connection info in config/env/production.js
    */
   stores: {
-
-    defaultStore: 'localStorage',
 
     /**
      * Define a store called "local" which uses SQLite3 to persist data.
