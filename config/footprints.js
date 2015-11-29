@@ -1,6 +1,6 @@
 /**
  * Footprints Configuration
- * (trails.config.footprints)
+ * (app.config.footprints)
  *
  * Footprints are routes that are auto-generated from your model and controller
  * definitions in api/controllers and api/models.
@@ -42,15 +42,19 @@ module.exports = {
 
     actions: {
       create: true,
+      createWithId: true,
       find: true,
+      findOne: true,
       update: true,
       destroy: true,
 
       /**
-       * Specify which "association" endpoints to bind.
+       * Specify which "association" endpoints to activate.
        */
       createAssociation: true,
+      createAssociationWithId: true,
       findAssociation: true,
+      findOneAssociation: true,
       updateAssociation: true,
       destroyAssociation: true
     }

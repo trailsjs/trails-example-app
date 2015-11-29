@@ -3,14 +3,13 @@
  * (app.config)
  */
 exports.env = require('./env')
+exports.errors = require('./errors')
 exports.log = require('./log')
 exports.trailpack = require('./trailpack')
 
-/**
- * Addon Configuration
- */
 exports.db = require('./db')
 exports.footprints = require('./footprints')
+exports.policies = require('./policies')
 exports.routes = require('./routes')
 exports.server = require('./server')
 exports.session = require('./session')
