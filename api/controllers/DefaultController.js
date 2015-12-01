@@ -1,4 +1,3 @@
-const services = require('../services')
 
 /**
  * DefaultController
@@ -11,6 +10,6 @@ module.exports = {
    * Return some info about this application
    */
   info (request, reply) {
-    reply(services.DefaultService.getApplicationInfo())
+    reply(this.api.services.DefaultService.getApplicationInfo())
   }
 }

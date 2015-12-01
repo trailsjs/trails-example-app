@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 /**
  * DefaultService
  *
@@ -8,12 +10,23 @@ module.exports = {
   /**
    * Return some info about this application
    */
-  getApplicationInfo (trails) {
+  getApplicationInfo () {
     return {
-      trails: trails.version,
-      trailpacks: trails.trailpacks,
+      node: process.versions,
+      trailpacks: _.map(_.omit(this.packs, 'inspect'), pack => {
+        return {
+          name: pack.name,
+          version: pack.pkg.version
+        }
+      })
+    }
+    /*
+    return {
+      trails: this.version,
+      trailpacks: this.packs,
       process: process.versions
     }
+    */
   }
 
 }

@@ -1,6 +1,6 @@
 /**
  * Trailpack Configuration
- * (trails.config.trailpack)
+ * (app.config.trailpack)
  *
  * @see http://trailsjs.io/doc/config/trailpack.js
  */
@@ -14,11 +14,11 @@ module.exports = {
   packs: [
     require('trailpack-core'),
     require('trailpack-repl'),
-    require('trailpack-router')
+    require('trailpack-router'),
+    require('trailpack-hapi')
   ],
 
   paths: {
     root: `${__dirname}/..`
   }
-
 }

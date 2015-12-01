@@ -7,6 +7,7 @@
     "test": "test"
   },
   "dependencies": {
+    "lodash": "^3.10.1",
     "trails": "latest",
     "winston": "^2.1.1"
   },
