@@ -8,10 +8,15 @@
  */
 module.exports = {
 
-  host: 'localhost',
-
-  /*
-   * The port the web server will listen on
+  /**
+   * The default web server engine used by controllers
    */
-  port: 3000
+  defaultEngine: 'hapi',
+
+  engines: {
+
+    hapi: {
+      port: process.env.PORT || 3000
+    }
+  }
 }

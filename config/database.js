@@ -1,19 +1,17 @@
 /**
  * Database Configuration
- * (trails.config.db)
+ * (app.config.database)
  *
  * Configure the ORM layer, connections, etc.
  *
- * @see http://trailsjs.io/doc/config/database.js
+ * @see {@link http://trailsjs.io/doc/config/database}
  */
 module.exports = {
 
   /**
-   * Specify the ORM layer to use
+   * The default store used by models
    */
-  orm: 'waterline',
-
-  defaultStore: 'localStorage',
+  defaultStore: 'sqlitedev',
 
   /**
    * Define the database stores. A store is typically a single database.
@@ -27,10 +25,9 @@ module.exports = {
     /**
      * Define a store called "local" which uses SQLite3 to persist data.
      */
-    local: {
-      adapter: 'waterline-sqlite3',
+    sqlitedev: {
+      adapter: require('waterline-sqlite3'),
       migrate: 'alter'
     }
-
   }
 }

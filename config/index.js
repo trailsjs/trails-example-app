@@ -7,7 +7,7 @@ exports.errors = require('./errors')
 exports.log = require('./log')
 exports.trailpack = require('./trailpack')
 
-exports.db = require('./db')
+exports.database = require('./database')
 exports.footprints = require('./footprints')
 exports.policies = require('./policies')
 exports.routes = require('./routes')
