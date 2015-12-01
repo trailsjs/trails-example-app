@@ -1,9 +1,11 @@
 const _ = require('lodash')
 
 /**
- * DefaultService
+ * @module DefaultService
  *
  * @description Default Service included with a new Trails app
+ * @see {@link http://trailsjs.io/doc/api/services}
+ * @this TrailsApp
  */
 module.exports = {
 

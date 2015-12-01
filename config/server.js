@@ -1,6 +1,6 @@
 /**
  * Server Configuration
- * (trails.config.server)
+ * (app.config.server)
  *
  * Configure the Web Server
  *
@@ -8,15 +8,10 @@
  */
 module.exports = {
 
-  /**
-   * Specify the web server to use. e.g. 'hapi', 'express4', 'koa2'
-   */
-  engine: 'hapi',
-
   host: 'localhost',
 
   /*
-   * The port for the web server to listen on
+   * The port the web server will listen on
    */
   port: 3000
 }
