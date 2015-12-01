@@ -12,7 +12,9 @@ module.exports = {
    */
   getApplicationInfo () {
     return {
-      node: process.versions,
+      app: this.pkg.version,
+      node: process.version,
+      libs: process.versions,
       trailpacks: _.map(_.omit(this.packs, 'inspect'), pack => {
         return {
           name: pack.name,
@@ -20,13 +22,5 @@ module.exports = {
         }
       })
     }
-    /*
-    return {
-      trails: this.version,
-      trailpacks: this.packs,
-      process: process.versions
-    }
-    */
   }
-
 }
