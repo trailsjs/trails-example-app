@@ -4,7 +4,6 @@ module.exports = {
     disabled: [
       'repl'
     ]
-  },
+  }
 
 }
-

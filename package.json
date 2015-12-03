@@ -13,12 +13,14 @@
     "winston": "^2.1.1"
   },
   "devDependencies": {
+    "eslint": "^1.10.3",
     "mocha": "^2.3.4",
     "supertest": "^1.1.0"
   },
   "scripts": {
     "test": "NODE_ENV=testing mocha",
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
