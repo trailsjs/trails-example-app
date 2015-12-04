@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - '4'
+  - stable
+
+before_script:
+  - npm run lint
+
+notifications:
+  emails: false
+
+sudo: false

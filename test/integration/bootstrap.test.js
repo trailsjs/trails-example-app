@@ -1,10 +1,9 @@
-const TrailsApp = require('trails-app')
+const Trails = require('trails')
 const App = require('../../')
-const app = new TrailsApp(App)
+global.app = new Trails(App)
 
-
-before(done => {
-  return app.start().catch(app.stop)
+before(() => {
+  return global.app.start().catch(global.app.stop)
 })
 
 after(() => {

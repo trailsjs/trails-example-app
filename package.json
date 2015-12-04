@@ -8,17 +8,24 @@
   },
   "dependencies": {
     "lodash": "^3.10.1",
+    "trailpack-core": "0.0.2",
+    "trailpack-hapi": "0.0.2",
+    "trailpack-repl": "0.0.2",
+    "trailpack-router": "0.0.2",
     "trails": "latest",
     "waterline-sqlite3": "^0.12.4",
     "winston": "^2.1.1"
   },
   "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-trails": "^0.0.8",
     "mocha": "^2.3.4",
     "supertest": "^1.1.0"
   },
   "scripts": {
     "test": "NODE_ENV=testing mocha",
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "eslint . --debug"
   },
   "repository": {
     "type": "git",
@@ -41,5 +48,8 @@
     "darwin",
     "win32",
     "linux"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "trails"
+  }
 }
