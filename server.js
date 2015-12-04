@@ -5,7 +5,7 @@
  */
 process.env.NODE_ENV || (process.env.NODE_ENV = 'development')
 
-const TrailsApp = require('trails-app')
+const TrailsApp = require('trails')
 const App = require('./')
 const app = new TrailsApp(App)
 

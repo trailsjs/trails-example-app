@@ -1,4 +1,4 @@
-const TrailsApp = require('trails-app')
+const TrailsApp = require('trails')
 const App = require('../../')
 const app = new TrailsApp(App)
 
