@@ -14,14 +14,14 @@
   },
   "devDependencies": {
     "eslint": "^1.10.3",
-    "eslint-config-trails": "^0.0.1",
+    "eslint-config-trails": "^0.0.8",
     "mocha": "^2.3.4",
     "supertest": "^1.1.0"
   },
   "scripts": {
     "test": "NODE_ENV=testing mocha",
     "start": "node server.js",
-    "lint": "eslint ."
+    "lint": "eslint . --debug"
   },
   "repository": {
     "type": "git",
@@ -44,5 +44,8 @@
     "darwin",
     "win32",
     "linux"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "trails"
+  }
 }
