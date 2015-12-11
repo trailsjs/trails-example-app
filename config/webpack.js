@@ -1,8 +1,8 @@
 /**
  * Webpack Configuration
- * (trails.config.webpack)
+ * (app.config.webpack)
  *
- * @see http://trailsjs.io/doc/config/webpack.js
+ * @see http://trailsjs.io/doc/config/webpack
  */
 module.exports = {
 

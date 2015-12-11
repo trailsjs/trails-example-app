@@ -1,6 +1,6 @@
 /**
  * Session Configuration
- * (trails.config.session)
+ * (app.config.session)
  *
  * @see http://trailsjs.io/doc/config/session.js
  */
@@ -17,7 +17,7 @@ module.exports = {
   jwt: {
     secret: '',
     connection: 'localStorage',
-    model: 'UserToken'
+    model: 'WebToken'
   },
 
   /**

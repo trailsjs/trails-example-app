@@ -1,6 +1,6 @@
 /**
  * Views Configuration
- * (trails.config.views)
+ * (app.config.views)
  *
  * @see http://trailsjs.io/doc/config/views.js
  */

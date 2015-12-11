@@ -2,11 +2,12 @@
  * Trailpack Configuration
  * (app.config.trailpack)
  *
- * @see http://trailsjs.io/doc/config/trailpack.js
+ * @see http://trailsjs.io/doc/config/trailpack
  */
 module.exports = {
 
-  disabled: [ ],
+  disabled: [
+  ],
 
   /**
    * Order does *not* matter. Each module is loaded according to its own requirements.
@@ -15,7 +16,6 @@ module.exports = {
     require('trailpack-core'),
     require('trailpack-repl'),
     require('trailpack-router'),
-    require('trailpack-hapi')
   ],
 
   paths: {

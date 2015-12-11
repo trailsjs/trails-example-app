@@ -2,44 +2,54 @@
   "name": "trails-example-app",
   "version": "0.0.0",
   "description": "A new Trails application",
-  "directories": {
-    "doc": "doc",
-    "test": "test"
+  "homepage": "https://github.com/trailsjs/testapp#readme",
+  "author": {
+    "name": "Travis Webb",
+    "email": "me@traviswebb.com",
+    "url": "github.com/tjwebb"
   },
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "trails",
+    "trailsjs"
+  ],
   "dependencies": {
-    "lodash": "^3.10.1",
+    "lodash": "^3.10",
+    "rc": "^1.1",
+    "trailpack-core": "latest",
+    "trailpack-hapi": "latest",
+    "trailpack-repl": "latest",
+    "trailpack-router": "latest",
     "trails": "latest",
-    "waterline-sqlite3": "^0.12.4",
+    "waterline-sqlite3": "latest",
     "winston": "^2.1.1"
   },
   "devDependencies": {
-    "mocha": "^2.3.4",
-    "supertest": "^1.1.0"
+    "mocha": "^2.3",
+    "supertest": "^1.1"
   },
-  "scripts": {
-    "test": "NODE_ENV=testing mocha",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/trailsjs/testapp.git"
-  },
-  "keywords": [
+  "bundledDependencies": [
+    "lodash",
+    "rc",
+    "trailpack-core",
+    "trailpack-hapi",
+    "trailpack-repl",
+    "trailpack-router",
     "trails",
-    "testapp"
+    "waterline-sqlite3",
+    "winston"
   ],
-  "author": "Travis Webb <me@traviswebb.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/trailsjs/testapp/issues"
+  "scripts": {
+    "test": "mocha"
   },
-  "homepage": "https://github.com/trailsjs/testapp#readme",
   "engines": {
     "node": ">= 4.0.0"
   },
-  "os": [
-    "darwin",
-    "win32",
-    "linux"
-  ]
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "repository": "git@github.com:trailsjs/trails-example-app.git"
 }

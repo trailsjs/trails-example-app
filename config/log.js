@@ -1,8 +1,8 @@
 /**
  * Logging Configuration
- * (trails.config.log)
+ * (app.config.log)
  *
- * @see http://trailsjs.io/doc/config/log.js
+ * @see http://trailsjs.io/doc/config/log
  */
 const winston = require('winston')
 

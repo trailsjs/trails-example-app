@@ -1,12 +1,11 @@
 /**
- * Trails App Server
+ * @module server
  *
- * This file is generated. We strongly recommend that you do not edit it.
+ * This code is part of the Trails framework. Don't edit it.
  */
-process.env.NODE_ENV || (process.env.NODE_ENV = 'development')
+const rc = require('rc')
+const TrailsApp = require('trails')
+const testapp = require('./')
+const app = new TrailsApp(testapp)
 
-const TrailsApp = require('trails-app')
-const App = require('./')
-const app = new TrailsApp(App)
-
-app.start().catch(app.stop)
+app.start(rc('trails')).catch(app.stop)
