@@ -34,17 +34,14 @@ module.exports = {
       watch: false,
 
       /**
-       * Whether to populate all model associations by default (for "find"
-       * and "findOne")
+       * Whether to populate all model associations by default (for "find")
        */
       populate: true
     },
 
     actions: {
       create: true,
-      createWithId: true,
       find: true,
-      findOne: true,
       update: true,
       destroy: true,
 
@@ -52,9 +49,7 @@ module.exports = {
        * Specify which "association" endpoints to activate.
        */
       createAssociation: true,
-      createAssociationWithId: true,
       findAssociation: true,
-      findOneAssociation: true,
       updateAssociation: true,
       destroyAssociation: true
     }
