@@ -17,7 +17,7 @@
     "trailsjs"
   ],
   "dependencies": {
-    "lodash": "^3.10",
+    "lodash": "^4.0.0",
     "rc": "^1.1",
     "trailpack-core": "latest",
     "trailpack-hapi": "latest",
