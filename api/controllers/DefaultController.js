@@ -1,3 +1,7 @@
+'use strict'
+
+const Controller = require('trails-controller')
+
 /**
  * @module DefaultController
  *
@@ -5,12 +9,12 @@
  * @see {@link http://trailsjs.io/doc/api/controllers}
  * @this TrailsApp
  */
-module.exports = {
+module.exports = class DefaultController extends Controller {
 
   /**
    * Return some info about this application
    */
   info (request, reply) {
-    reply(this.api.services.DefaultService.getApplicationInfo())
+    reply(this.app.services.DefaultService.getApplicationInfo())
   }
 }

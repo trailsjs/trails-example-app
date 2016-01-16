@@ -13,6 +13,11 @@ module.exports = {
    * Generate routes for controller handlers.
    */
   controllers: true,
+  /*
+  controllers: {
+    // ...
+  }
+  *
 
   /**
    * Generate conventional Create, Read, Update, and Delete (CRUD) routes for

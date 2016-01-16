@@ -25,12 +25,14 @@
     "trailpack-hapi": "latest",
     "trailpack-repl": "latest",
     "trailpack-router": "latest",
+    "trailpack-waterline": "0.0.11",
     "trails": "latest",
     "waterline-sqlite3": "latest",
     "winston": "^2.1.1"
   },
   "devDependencies": {
     "mocha": "^2.3",
+    "smokesignals": "0.0.8",
     "supertest": "^1.1"
   },
   "bundledDependencies": [

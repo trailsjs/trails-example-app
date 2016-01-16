@@ -1,12 +1,25 @@
+'use strict'
+
+const Model = require('trails-model')
+
 /**
- * User
- *
- * @description A User model
+ * @module User
+ * @description User account object
  */
-module.exports = {
-  attributes: {
-    username: {
-      type: 'string'
+module.exports = class User extends Model {
+
+  static config () {
+  }
+
+  static schema () {
+    return {
+      username: {
+        type: 'string'
+      },
+      tokens: {
+        collection: 'WebToken',
+        via: 'user'
+      }
     }
   }
 }
