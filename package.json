@@ -28,7 +28,7 @@
     "trailpack-waterline": "0.0.11",
     "trails": "latest",
     "waterline-sqlite3": "latest",
-    "winston": "^2.1.1"
+    "winston": "^2.2.0"
   },
   "devDependencies": {
     "mocha": "^2.3",
