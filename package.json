@@ -17,7 +17,7 @@
     "trailsjs"
   ],
   "dependencies": {
-    "eslint": "^2.0.0-alpha-2",
+    "eslint": "^2.5.2",
     "eslint-config-trails": "^1.0.1",
     "lodash": "^3.10",
     "rc": "^1.1",
